@@ -1,9 +1,8 @@
-package tests;
+package baseTest;
 
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -12,8 +11,8 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
     public static WebDriver driver;
     Faker faker = new Faker();
-    String Username = faker.name().username();
-    String Password = faker.internet().password();
+    protected String Username = faker.name().username();
+    protected String Password = faker.internet().password();
 
     @BeforeSuite
     public void startDriver() {

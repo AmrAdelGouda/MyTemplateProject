@@ -1,22 +1,23 @@
 package tests;
 
+import baseTest.TestBase;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.SignUpForm;
+import pages_Events.HomePage_Events;
+import pages_Events.LoginPage_Events;
+import pages_Events.SignUpForm_Events;
 
 public class SignUpAndLoginTest extends TestBase {
-    HomePage HomePageObj;
-    SignUpForm SignUpFormObj;
-    LoginPage LoginPageObj;
+    HomePage_Events HomePageObj;
+    SignUpForm_Events SignUpFormObj;
+    LoginPage_Events LoginPageObj;
 
 
     @BeforeMethod
     public void initialization() {
-        HomePageObj = new HomePage(driver);
-        SignUpFormObj = new SignUpForm(driver);
-        LoginPageObj = new LoginPage(driver);
+        HomePageObj = new HomePage_Events(driver);
+        SignUpFormObj = new SignUpForm_Events(driver);
+        LoginPageObj = new LoginPage_Events(driver);
     }
 
     @Test(priority = 1)

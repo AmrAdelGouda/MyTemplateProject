@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="allSuites">
     <suite-files>
-        <suite-file path="file1.xml" />
-        <suite-file path="file2.xml" />
+        <suite-file path="xml_Files/file1.xml" />
+        <suite-file path="xml_Files/file2.xml" />
     </suite-files>
 </suite>
